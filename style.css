@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: black;
+}
+
+.container {
+}
+
+/*----------------------------------- Header Section ----------------------------*/
+.header {
+  background-color: black;
+  color: white !important;
+  position: sticky !important;
+}
+
+.header img {
+  position: absolute;
+  margin: 15px 0 0 50px !important;
+  width: 4%;
+  border: 3px solid white;
+  border-radius: 50%;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 11vh;
+  padding-left: 30%;
+  /* box-shadow: 10px 5px 5px; */
+}
+
+.nav li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px;
+  margin: 0 10px;
+  border-radius: 5px;
+}
+
+/*----------------------------------- Info Video Section ----------------------------*/
+
+.intro-video {
+  width: 100%;
+  height: auto !important;
+}
+
+/*----------------------------------- Welcome Section ----------------------------*/
+
+.welcome-section {
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 7, 7, 0.863),
+    rgba(0, 0, 0, 0.938)
+  );
+  color: white;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 5% 15% 0 15%;
+}
+
+.welcome-section h1,
+h3 {
+  font-size: 113px !important;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.welcome-section p {
+  padding: 5% 0;
+  font-size: 20px !important;
+  font-weight: 300;
+  line-height: 1.5em;
+}
+
+/* .welcome-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+} */
+
+/* .welcome-details li {
+  font-size: 20px;
+  list-style: none;
+  margin: 0 3%;
+  font-weight: bold;
+} */
+
+/* .welcome-details li span {
+  font-size: 80px;
+} */
+
+.btn {
+  cursor: pointer;
+  margin: 50px 0;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 20px;
+}
+
+.btn:hover {
+  border: 2px solid #bbff00;
+}
+
+/*----------------------------------- Carousel Section ----------------------------*/
+
+.carousal-section {
+  background-color: black !important;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.image-list {
+  padding: 50px 0;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.image-item {
+  width: 325px;
+  height: 400px;
+  margin: 0 10px;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.slide {
+  animation: slide 20s infinite linear;
+}
+
+.carousal-section:hover .slide {
+  animation-play-state: paused;
+}
+
+.carousal-section:before,
+.carousal-section:after {
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 100%;
+  content: "";
+  z-index: 1;
+}
+
+.carousal-section:before {
+  left: 0;
+  background: linear-gradient(to left, transparent, rgba(0, 0, 0, 0.8));
+}
+
+.carousal-section:after {
+  right: 0;
+  background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.8));
+}
+
+/*----------------------------------- Services Section ----------------------------*/
+
+.services {
+  background-color: black;
+  /* width: 100%; */
+}
+
+.card-list {
+  
+}
+
+.card {
+  height: fit-content;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 10px 5px 5px;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  transition: 0.5s;
+  border: 2px solid white;
+}
+
+.services .card-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.services .card-item p {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.5em;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.services .card-item img {
+  height: fit-content;
+  border-radius: 50%;
+  box-shadow: 10px 5px 5px;
+  transition: 0.5s;
+  border: 2px solid black;
+}
+
+
+/*----------------------------------- Clients Section ----------------------------*/
+
+#particles-js h1{
+  left: 33%;
+}
